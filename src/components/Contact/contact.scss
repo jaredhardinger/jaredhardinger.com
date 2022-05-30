@@ -1,0 +1,113 @@
+#contact {
+  background-color: #b7c7ff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  justify-content: center;
+
+  .sub-header {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: space-around;
+
+    .ant-card {
+      min-width: 500px;
+
+      .ant-card-body {
+        .success-message {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 50px;
+
+      img,
+      .social-circle {
+        margin: 10px;
+      }
+
+      .behance {
+        img {
+          height: 80px;
+        }
+
+        .behance-icon-hover {
+          display: none;
+        }
+
+        &:hover {
+          .behance-icon {
+            display: none;
+          }
+
+          .behance-icon-hover {
+            display: initial;
+          }
+        }
+      }
+
+      .social-circle {
+        transition: 0.2s all ease;
+        height: 80px;
+
+        &:hover path {
+          fill: #7385e9 !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #contact {
+    .sub-header {
+      font-size: 20px;
+      padding: 0 30px;
+    }
+
+    .contact-section {
+      .ant-card {
+        min-width: 300px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #contact {
+    height: 900px;
+
+    .contact-section {
+      flex-direction: column;
+
+      .ant-card {
+        min-width: 400px;
+      }
+
+      .social {
+        flex-direction: initial;
+        margin: 50px 0 0 0;
+
+        .social-circle {
+          height: 50px;
+        }
+
+        .behance {
+          img {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

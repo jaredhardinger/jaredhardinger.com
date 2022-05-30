@@ -1,0 +1,128 @@
+#tools,
+.tools-section {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  justify-content: center;
+}
+
+#tools {
+  background-color: #ffe5e5;
+  align-items: center;
+
+  .tools-section {
+    .section-header {
+      margin-bottom: 40px;
+    }
+
+    .section-text {
+      display: flex;
+      justify-content: space-around;
+
+      .experience {
+        max-width: 40%;
+
+        .text-header {
+          font-size: 28px;
+          margin-bottom: 40px;
+        }
+
+        .end-text {
+          font-size: 24px;
+          margin-top: 50px;
+        }
+
+        .tool-icons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          i {
+            color: #ff6f6f;
+            font-size: 80px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .arrow-down {
+    border-top: 40px solid #ffe5e5;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #tools,
+  .tools-section {
+    height: 1200px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #tools,
+  .tools-section {
+    height: 900px;
+  }
+
+  #tools {
+    .tools-section {
+      .section-header {
+        font-size: 40px;
+      }
+
+      .section-text {
+        flex-direction: column;
+        align-items: center;
+
+        .experience {
+          max-width: 80%;
+
+          .text-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+
+          .end-text {
+            font-size: 22px;
+            margin: 30px 0;
+          }
+
+          .tool-icons {
+            margin-bottom: 40px;
+
+            i {
+              font-size: 50px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (min-width: 1000px) {
+//   #tools,
+//   .tools-section {
+//     height: 700px;
+//   }
+
+//   #tools {
+//     .tools-section {
+//       .section-header {
+//         font-size: 40px;
+//       }
+
+//       .section-text {
+//         .experience {
+//           .tool-icons {
+//             i {
+//               font-size: 60px;
+//               padding: 10px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
